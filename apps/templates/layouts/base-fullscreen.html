@@ -41,9 +41,14 @@
   {% block stylesheets %}{% endblock stylesheets %}
 
 </head>
-<body class="">
+<body class="g-sidenav-show  bg-gray-100">
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 
-  {% block content %}{% endblock content %}
+    {% include "includes/navigation.html" %} 
+
+    {% block content %}{% endblock content %}
+
+  </main>
 
   {% include "includes/scripts.html" %}
 
