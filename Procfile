@@ -1,1 +1,1 @@
-echo "web: gunicorn --config gunicorn-cfg.py app:app"
+web: gunicorn app:app
