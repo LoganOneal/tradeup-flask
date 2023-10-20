@@ -11,14 +11,14 @@ from jinja2 import TemplateNotFound
 from apps.config import API_GENERATOR
 
 @blueprint.route('/index')
-@login_required
+# @login_required
 def index():
     return render_template('home/index.html', segment='index', API_GENERATOR=len(API_GENERATOR))
 
 @blueprint.route('/<template>')
-@login_required
+# @login_required
 def route_template(template):
-
+    print("TEMPLATE: ", template)
     try:
 
         if not template.endswith('.html'):
@@ -26,6 +26,8 @@ def route_template(template):
 
         # Detect the current page
         segment = get_segment(request)
+        
+        print("SEGMENT:", segment)
 
         # Serve the file (if exists) from app/templates/home/FILE.html
         return render_template("home/" + template, segment=segment, API_GENERATOR=len(API_GENERATOR))

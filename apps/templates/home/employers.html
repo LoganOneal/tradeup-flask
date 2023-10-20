@@ -1,0 +1,107 @@
+{% extends 'layouts/base-landing.html' %} {% block title %} Home {% endblock
+title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+<!-- -------- START HEADER 2 w/ waves and typed text ------- -->
+<header class="position-relative">
+  <div
+    class="page-header min-vh-75"
+    style="background-image: url(../../assets/img/meeting.jpg)"
+  >
+    <span class="mask bg-gradient-primary"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 text-start">
+          <h1 class="text-white">Find skilled talent faster.</h1>
+          <h3 class="text-start pe-5 mt-4">
+            Use AI to find, vet, and seek out talent.
+          </h3>
+          <br />
+          <div class="buttons">
+            <a
+              href="https://airtable.com/appF8iniLjyjrpRcM/shrk4ZcHL6xHy3x4A"
+              role="button"
+            >
+              <button type="button" class="btn btn-lg btn-white">
+                Join Our Waitlist
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-absolute w-100 z-index-1 bottom-0">
+    <svg
+      class="waves"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 40"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="moving-waves">
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="-1"
+          fill="rgba(251,251,251,0.40"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="3"
+          fill="rgba(251,251,251,0.35)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="5"
+          fill="rgba(251,251,251,0.25)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="8"
+          fill="rgba(251,251,251,0.20)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="13"
+          fill="rgba(251,251,251,0.15)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="16"
+          fill="rgba(251,251,251,0.95"
+        />
+      </g>
+    </svg>
+  </div>
+</header>
+<!-- -------- END HEADER 2 w/ waves and typed text ------- -->
+
+{% endblock content %} {% block javascripts %}
+<!-- Mandatory init script -->
+<script>
+  if (document.getElementById("typed")) {
+    var typed = new Typed("#typed", {
+      stringsElement: "#typed-strings",
+      typeSpeed: 70,
+      backSpeed: 50,
+      backDelay: 200,
+      startDelay: 500,
+      loop: true,
+    });
+  }
+</script>
+{% endblock javascripts %}

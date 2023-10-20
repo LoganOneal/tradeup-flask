@@ -4096,7 +4096,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(52, 71, 103, 0.7);
   --bs-navbar-disabled-color: rgba(52, 71, 103, 0.3);
   --bs-navbar-active-color: rgba(52, 71, 103, 0.9);
-  --bs-navbar-brand-padding-y: 0.59375rem;
+  --bs-navbar-brand-padding-y: 0rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 0.875rem;
   --bs-navbar-brand-color: rgba(52, 71, 103, 0.9);
@@ -18428,7 +18428,7 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+  background-image: linear-gradient(310deg, #5BCCF3 0%, #2e8bf6 100%);
 }
 
 .bg-gradient-secondary {
