@@ -1,1 +1,1 @@
-web: flask run
+echo "web: gunicorn --config gunicorn-cfg.py app:app"
